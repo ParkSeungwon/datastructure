@@ -1,60 +1,84 @@
 \documentclass[11pt,a4paper]{article}
 \synctex=1
 \usepackage[utf8]{inputenc}
-\usepackage[margin=2cm, landscape]{geometry}
+\usepackage[margin=1cm, landscape]{geometry}
 \usepackage{graphicx}
+%\usepackage{verbatim}
 \usepackage{listings}
+\usepackage{fix-cm}
 \usepackage[hangul]{kotex}
 \linespread{1.3}
 
 \begin{document}
-{\Huge\hfill자료구조와 실습 과제 \includegraphics[height=30pt]{logo.jpg}}
+\begin{center}
+	\vspace*{3cm}
+	{\fontsize{50}{50}자료구조와  실습  과제}
+	\vspace{5cm}	
 
-\hfill2016110056 불교학부 박승원
 
-\hfill\today
+\includegraphics[height=60pt]{logo.jpg}
+
+\Huge2016110056 불교학부 박승원
+
+\today
+
+\end{center}
+\newpage
 \noindent
-\lstset{language=C, tabsize=4, frame=single, showstringspaces=false, breaklines=true}
+%\renewcommand{\ttdefault}{pcr}
+\lstset{language=C, columns=flexible, tabsize=4, frame=shadowbox, showstringspaces=false, breaklines=true, basicstyle=\Large}
 \includegraphics[page=2, width=\textwidth]{1.pdf}
+\newpage
 \section*{1.}
 \lstinputlisting{1.c}	
+%\verbatiminput{1.c}
 \includegraphics[width=\textwidth]{1.png}	
 
-
+\newpage
 \section*{2.}	
 \lstinputlisting{2.c}	
 \includegraphics[width=\textwidth]{2.png}	
 
 
+\newpage
 \section*{3.}
 \lstinputlisting{3.c}	
 \includegraphics[width=\textwidth]{3.png}	
 
 
+\newpage
 \section*{4.}
 \lstinputlisting{4.c}	
 \includegraphics[width=\textwidth]{4.png}	
 
 
+\newpage
 \includegraphics[page=3, width=\textwidth]{1.pdf}
 %\section*{5.}
+\newpage
 \lstinputlisting{5.c}	
 \includegraphics[width=\textwidth]{5.png}	
 
 
+\newpage
 \includegraphics[page=4, width=\textwidth]{1.pdf}
 %\section*{6.}
+\newpage
 \lstinputlisting{6.c}	
 \includegraphics[width=\textwidth]{6.png}	
 
 
+\newpage
 \includegraphics[page=5, width=\textwidth]{1.pdf}
 %\section*{7.}
+\newpage
 \lstinputlisting{7.c}	
 \includegraphics[width=\textwidth]{7.png}	
 
 
+\newpage
 \includegraphics[page=6, width=\textwidth]{1.pdf}
+\newpage
 \lstinputlisting{8.c}	
 \includegraphics[width=\textwidth]{8.png}	
 %\section*{8.}

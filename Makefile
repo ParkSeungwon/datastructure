@@ -1,7 +1,8 @@
 CFLAG = -g -fmax-errors=3
 CC = gcc
-EXE = $(patsubst %.c, %.x, $(wildcard *.c))
-PNG = $(patsubst %.c, %.png, $(wildcard *.c))
+SRC = $(wildcard *.c)
+EXE = $(patsubst %.c, %.x, $(SRC))
+PNG = $(patsubst %.c, %.png, $(SRC))
 
 all : $(EXE)
 png : $(PNG)
@@ -16,9 +17,9 @@ tex : report.pdf
 	@echo "----------Ending Program-----------------------------"
 	@gnome-screenshot -wBf $@
 
-report.pdf : report.tex $(PNG) $(EXE) $(wildcard *.c)
+report.pdf : report.tex $(PNG) $(EXE) $(SRC)
 	pdflatex report.tex
-	okular report.pdf
+	evince report.pdf
 
 clean:
 	rm $(EXE)
