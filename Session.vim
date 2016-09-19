@@ -28,8 +28,8 @@ badd +1 ~/사진/report/4.c
 badd +22 ~/사진/report/6.c
 badd +1 ~/사진/report/5.c
 badd +10 ~/사진/report/7.c
-badd +0 ~/Programming/CProgramming/7.c
-badd +0 ~/Programming/CProgramming/8.c
+badd +1 ~/Programming/CProgramming/7.c
+badd +1 ~/Programming/CProgramming/8.c
 argglobal
 silent! argdel *
 argadd report.tex
@@ -50,11 +50,11 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 5 - ((4 * winheight(0) + 23) / 46)
+let s:l = 59 - ((45 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-5
+59
 normal! 05|
 tabedit ~/Programming/CProgramming/2.c
 set splitbelow splitright
@@ -72,12 +72,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
+let s:l = 25 - ((24 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+25
+normal! 020|
 tabedit ~/Programming/CProgramming/3.c
 set splitbelow splitright
 set nosplitbelow
@@ -94,12 +94,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
+let s:l = 15 - ((14 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+15
+normal! 05|
 tabedit ~/Programming/CProgramming/4.c
 set splitbelow splitright
 set nosplitbelow
@@ -116,12 +116,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
+let s:l = 24 - ((23 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+24
+normal! 013|
 tabedit ~/Programming/CProgramming/5.c
 set splitbelow splitright
 set nosplitbelow
@@ -138,12 +138,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
+let s:l = 41 - ((40 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+41
+normal! 05|
 tabedit ~/Programming/CProgramming/6.c
 set splitbelow splitright
 set nosplitbelow
@@ -160,56 +160,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
+let s:l = 8 - ((7 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
-tabedit ~/Programming/CProgramming/7.c
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-1
-normal! 0
-tabedit ~/Programming/CProgramming/8.c
-set splitbelow splitright
-set nosplitbelow
-set nosplitright
-wincmd t
-set winheight=1 winwidth=1
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-1
-normal! 0
+8
+normal! 023|
 tabedit ~/Programming/CProgramming/Makefile
 set splitbelow splitright
 set nosplitbelow
@@ -226,12 +182,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 9 - ((8 * winheight(0) + 23) / 46)
+let s:l = 1 - ((0 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-9
-normal! 0
+1
+normal! 025|
 tabedit ~/Programming/CProgramming/report.tex
 set splitbelow splitright
 set nosplitbelow
@@ -248,13 +204,13 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 1 - ((0 * winheight(0) + 23) / 46)
+let s:l = 60 - ((36 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
-tabnext 10
+60
+normal! 022|
+tabnext 8
 set stal=1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf

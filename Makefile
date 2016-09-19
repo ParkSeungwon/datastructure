@@ -1,4 +1,4 @@
-CFLAG = -g -fmax-errors=3
+CFLAG = -g -fmax-errors=1
 CC = gcc
 SRC = $(wildcard *.c)
 EXE = $(patsubst %.c, %.x, $(SRC))
