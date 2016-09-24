@@ -27,4 +27,5 @@ int main(void)
 			middle.system_software + end->system_software, 
 			middle.basic_programming + end->basic_programming, 
 			middle.creative_engineering + end->creative_engineering);
+	free(end);
 }
